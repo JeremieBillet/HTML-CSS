@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- -------- lien feuille css --------------- -->
+    <link rel="stylesheet" href="JB_style.css">
+</head>
+
+<body>
+
+
+    <!-- ------------------------------------ -->
+    <!-- -------------- FORM ---------------- -->
+    <!-- ------------------------------------ -->
+    <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+
+        <fieldset class="item">
+
+            <legend>Formulaire de contact</legend>
+
+            <div class="container">
+                <fieldset class="item">
+                    <legend>Vous</legend>
+
+                    <label for="nom">Nom :</label><br />
+                    <input type="text" name="nom" id="nom" required /><br />
+
+                    <label for="prenom">Prénom :</label><br />
+                    <input type="text" name="prenom" id="prenom" /><br />
+
+                    <label for="dateNaissance">Date de naissance :</label><br />
+                    <input type="date" name="dateNaissance" id="dateNaissance" /><br />
+
+                    <label for="ville">Ville :</label><br />
+                    <select name="ville" id="ville">
+                        <option value="paris">Paris</option>
+                        <option value="bordeaux">Bordeaux</option>
+                        <option value="lyon">Lyon</option>
+                    </select><br />
+                </fieldset>
+                <fieldset class="item">
+                    <legend>Vous joindre</legend>
+
+                    <label for="tel">Téléphone :</label><br />
+                    <input type="tel" name="tel" id="tel" /><br />
+
+                    <label for="mail">E-mail :</label><br />
+                    <input type="email" name="mail" id="mail" required /><br />
+
+                    <label for="site">Site web :</label><br />
+                    <input type="url" name="site" id="site" /><br />
+                </fieldset>
+            </div>
+            <div class="container">
+                <fieldset class="item">
+                    <legend>Vos services</legend>
+                    <p>Souhaitez-vous être contacté ?</p>
+                    <input type="radio" id="oui" name="contact" value="oui">
+                    <label for="oui">Oui</label><br />
+                    <input type="radio" id="non" name="contact" value="non">
+                    <label for="non">Non</label>
+
+                    <p>Par quel moyen ?</p>
+                    <input type="checkbox" id="tel" name="notif" value="tel">
+                    <label for="tel">Téléphone</label><br />
+                    <input type="checkbox" id="email" name="notif" value="email">
+                    <label for="email">Email</label><br />
+                    <input type="checkbox" id="newletter" name="notif" value="newletter">
+                    <label for="newletter">Newletter</label>
+
+                </fieldset>
+                <fieldset class="item">
+                    <legend>Votre évaluation</legend>
+
+                    <p>Votre évaluation de mon site :</p>
+                    <input type="range" min="1" max="5" step="1" id="note" name="note">
+                    <p>Votre commentaire :</p>
+                    <textarea name="comment" id="comment" cols="50" rows="8"></textarea>
+                </fieldset>
+            </div>
+            <button type="submit" class="item">Envoyer</button>
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

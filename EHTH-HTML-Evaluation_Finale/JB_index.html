@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- -------- lien feuille css --------------- -->
+    <link rel="stylesheet" href="JB_style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <!-- ------------------------------------ -->
+        <!-- -------------- HEADER -------------- -->
+        <!-- ------------------------------------ -->
+        <header class="item">
+            <img class="logo" src="img/minion.gif" alt="logo" title="Minion" />
+
+            <div>
+                <h2>Jérémie</h2>
+                <h3>Carnet de voyage</h3>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="JB_accueil.html" target="myFrame">Accueil</a></li>
+                    <li class="deroulant"><a href="#">blog</a>
+                        <ul class="menu">
+                            <li><a href="JB_chine.html" target="myFrame">Chine</a></li>
+                            <li><a href="JB_mada.html" target="myFrame">Madagascar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="files/JeremieBilletCV.pdf">cv</a></li>
+                    <li><a href="JB_contact.html" target="myFrame">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ------------------------------------ -->
+        <!-- ------------ FRAGMENT -------------- -->
+        <!-- ------------------------------------ -->
+        <iframe name="myFrame" src="JB_contact.html" frameborder="0" width="100%" scrolling="no" height="710px"></iframe>
+        
+        <!-- ------------------------------------ -->
+        <!-- -------------- FOOTER -------------- -->
+        <!-- ------------------------------------ -->
+        <footer class="item container">
+            <div class="hobbies">
+                <h4>Mes hobbies</h4>
+                <div class="container">
+                    <img src="img/piano.jpg" alt="piano" title="piano">
+                    <img src="img/running.jpg" alt="running" title="running">
+                    <img src="img/macaron.jpeg" alt="macaron" title="cooking">
+                </div>
+            </div>
+            <div class="personnalites">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="3">The best guys</td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gandhi</td>
+                            <td>Pape Francois</td>
+                            <td>René Cotty</td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">
+                                    <figure>
+                                        <img src="img/gandhi.jpg" alt="Gandhi" title="Ganghi">
+                                        <figcaption>Gandhi</figcaption>
+                                    </figure>
+                                </a>
+                            </td>
+                            <td><a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_(pape)">
+                                    <figure>
+                                        <img src="img/pape.jpg" alt="Pape" title="Francois">
+                                        <figcaption>Francois Ier</figcaption>
+                                    </figure>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/Ren%C3%A9_Coty">
+                                    <figure>
+                                        <img src="img/rene.jpg" alt="René" title="René Cotty">
+                                        <figcaption>René Cotty</figcaption>
+                                    </figure>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
